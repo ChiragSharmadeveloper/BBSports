@@ -1,6 +1,7 @@
 import react from 'react'
 import Card from './Card'
 import VideoPlayer from './Video';
+import { Link } from 'react-router-dom';
 
 import transperentlogo from './Components/transperent logo.png'
 import './App.css'
@@ -31,7 +32,7 @@ const Banner = ({title }) => {
       {/* { Card section } */}
       
       <div className='cardholder'>
-    <Card image={"/image/bag 2.jpg"} title1={"BAGS"} id="card1"/>
+     <Link to='/Products'><Card image={"/image/bag 2.jpg"} title1={"BAGS"} id="card1"></Card></Link>
     <Card image={"/image/tennis b.jpg"} title1={"TENNIS BATS"} id="card1"/>
     <Card image={"/image/PP2.jpg"} title1={"BATTING PADS"} id="card1"/>
     <Card image={"/image/limited gloves.jpg"} title1={"GLOVES"} id="card1"/>
