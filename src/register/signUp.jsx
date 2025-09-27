@@ -17,7 +17,7 @@ export default function signUp() {
 
     <label>Email:</label>
     <input placeholder='@example.com'></input>
-   \
+   
     <label>Address Details</label>
     <label>House no:</label>
     <input placeholder=''></input>

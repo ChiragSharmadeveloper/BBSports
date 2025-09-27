@@ -4,16 +4,14 @@
   height:auto;
 }
 .App{
-    color: white;
-  /* overflow: hidden; */
-  
+    color: black
 
 }
 .App-header{
+  background-color: white;
     display:flex;
     justify-content:space-between;
     padding:0px 80px;
-    background-color: black;
     width: auto;
     height: 90px;
 }
@@ -24,7 +22,8 @@
 #bbs{
   font-size: 60px;
  text-decoration: none;
- color: white;
+ color: black;
+ background-color: white;
 }
 .header2{
   color:black;
@@ -49,10 +48,9 @@
 }
  
 #foto{
+  background-color: white;
     border-radius: 50%;
-    box-shadow: 5px grey;
     position: relative;
-    /* top: -20px; */
     width: 80px;
     height: 80px;
     padding: 10px;
@@ -60,6 +58,7 @@
   #login{
     font-size:xx-large;
     margin: 10px;
-    color: white;
+    color: black;
+    background-color: white;
   }
 
