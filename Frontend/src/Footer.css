@@ -1,0 +1,133 @@
+              /* This is footer css */ 
+.fot ul{
+    list-style-type:none;
+    color:black;
+    background-color: white;
+  }
+  .fot{
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:grid ;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-top: 80px;
+  }
+  .fot ul li{
+    margin:10px;
+    font-size: small;
+    font-weight: bold;
+    color:black;
+  }
+  .fot ul li a{
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s;
+  }
+  .fot ul li a:hover{
+    color: red;
+    text-decoration: dashed;
+  }
+  .foot{
+    width:100%;
+    gap:70px;
+    height: auto;
+  }
+  input[type='text']{
+    height: 20px;
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  input[type='text']:hover{
+    height: 20px;
+    width: 80px;
+    border-color: red;
+  }
+  input[type='email']{
+    height: 20px;
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  input[type='email']:hover{
+    height: 20px;
+    width: 80px;
+    border-color: red;
+  }
+  textarea[type='message']{
+    height: 80px;
+    width: 380px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  textarea[type='message']:hover{
+    height: 80px;
+    width: 380px;
+    border-color: red;
+  }
+  button{
+    color: white;
+    background: red;
+    width: 135px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+    width: 130px;
+  }
+  .my-icon {
+    font-size: 34px;
+     color:black;
+    background-color: white;
+    display: flex;
+    justify-content: right;  /* Centers horizontally */
+    align-items: right; 
+    position:relative;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  .my-icon:hover {
+    color: red;
+  }
+                  /* 2nd footer*/
+  .lastfoot{
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  #lastfoot1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 85px;
+    text-shadow: 0px 0px 5px rgb(131, 130, 130);
+     color: black;
+    -webkit-text-stroke: 2px rgb(114, 112, 112);
+    gap: 80px;
+  }
+  #copy{
+    margin-left: 60px;
+  }
+  .fa-solid{
+    color: black;
+    font-size: x-small;
+    column-gap: 30%;
+  }
+  #i2{
+    height:24px;
+    width:150px;
+    font-size:12px ;
+    color: black;
+  }
+  #feedback{
+    height:60px;
+    width:300px;
+    color:black
+  }
+  #i3{
+    border-radius: 10px;
+
+  }

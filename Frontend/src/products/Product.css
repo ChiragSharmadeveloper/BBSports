@@ -1,0 +1,76 @@
+.main{
+    height:auto; 
+    width:auto;
+}
+ .productHead{
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    color: rgb(250, 55, 55);
+    font-size: 50px;
+ }
+ .lbtn1{
+    background-color: transparent;
+    color:black;
+    margin-left: 20px;
+    width: auto;
+    text-align: center;
+
+ }
+ .lbtn1:hover{
+    background-color: transparent;
+    width: auto;
+ }
+  .rbtn1{
+    text-align: center;
+    background-color: transparent;
+    color:black;
+    margin-left: 20px;
+    width: fit-content;
+    font:40px;
+    padding: 5px 15px 5px 15px;
+ }
+ .rbtn1:hover{
+    background-color: transparent;
+    width: fit-content;
+ }
+ .classswiper{
+    display: flex;
+    width: 70%;
+    height: 250px;
+    gap: 20px;
+    margin-top: 25px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+ }
+ .imgproduct{
+   width: 30%;
+ }
+ .card-right{
+    display: inline-block;
+ }
+ .classswiper:hover{
+    border-bottom:1px  solid black;
+    cursor: pointer;
+ }
+ .Rate{
+       margin-left: 20px;
+    font-size: x-large;
+ }
+ .price{
+    text-decoration: line-through;
+    color: rgb(253, 28, 28);
+    margin-right: 10px;
+ 
+ }
+ .cardbutton{
+    background-color: transparent;
+    color: rgb(17, 17, 17);
+    width: fit-content;
+    margin-left: 10px;
+ }
+ .cardbutton:hover{
+    background-color: rgb(3, 40, 202);
+    width: fit-content;
+    color: white;
+ }

@@ -1,0 +1,24 @@
+.video-main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 60px;
+}
+.video-main video{
+    width: auto;
+    height: 550px;
+    margin-left: 50px;
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
+}
+.video-item video{
+    border-radius: 3%;
+}
+.youtubesec{
+    font:'80px';
+    width: 98%;
+    height: auto;
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding: 10px ;
+}

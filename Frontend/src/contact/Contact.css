@@ -1,0 +1,42 @@
+.cont{
+    width:auto;
+    height:auto;
+    background-color:  rgb(49, 48, 48);
+    gap:4px;
+    padding: 4px 40px 4px;
+    color:white
+}
+.head{
+    width:auto;
+    font:bold;
+    text-align: center;
+    color:white;
+    font-size: 90px;
+    font-family:'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+}
+.maphead{
+    color: white;
+}
+.googlemap{
+    width: 700px;
+    height: 400px;
+    
+}
+.locations{
+    color:white;
+    text-decoration: none;
+  font:bold ;
+  font:20px;
+}
+ul li{
+    list-style-type: none;
+  margin-top:4px; 
+}
+.my-icons{
+    width: 100%;
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font:bold;
+    padding-left: 20px;
+}

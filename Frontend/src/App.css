@@ -1,0 +1,96 @@
+*{
+  background-color: rgb(216, 216, 216);
+}
+#footo{
+  height:350px;
+  width:300px;
+}
+.card{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  margin:90px;
+}
+.main{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#foto2{
+  height: 400px;
+  width: 450px;
+  filter: drop-shadow( 20px 20px 10px rgb(206, 205, 205));
+}
+.banner{
+  display: flex;
+  color: black;
+  margin: 70px 20px;
+  padding: 30px;
+  gap: 10px;
+}
+.welcome{
+  width: 65%;
+  padding: 30px;
+  height: 320px;
+  gap: 10px; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cardholder{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  text-align: center;
+  color: black;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* .cardholder:hover{
+  
+} */
+.image-main{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  margin-bottom: 150px;
+
+}
+#believe{
+  color: rgb(255, 143, 149);
+  text-align: center;
+  padding-left: 0%;
+  font-size: 50px;
+  margin-top: 110px;
+  margin-bottom: 10px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.banner2{
+  margin: 100px 80px 100px 80px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 5%;
+  row-gap: 0%;
+}
+
+ .image-container{
+  border-radius: 15px ;
+  width: 350px;
+  height: 470px;
+  background-size: cover;
+  background-position: center;
+  animation: changeImage 10s infinite;
+ }
+ @keyframes changeImage{
+ 0% {
+  background-image: url("/public/image/PP1.jpg");
+ }
+ 33% {
+    background-image: url("/public/image/C\ bat2.jpg");
+ }
+ 66%{
+    background-image: url("/public/image/PP3.jpg");
+ }
+ 100%{
+    background-image: url("/public/image/bat 4.jpg");
+ }
+}
+
+

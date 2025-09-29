@@ -1,0 +1,66 @@
+*{
+  margin:0;
+  padding:0;
+  height:auto;
+}
+.App{
+    color: black;
+}
+.App-header{
+  background-color: white;
+    display:flex;
+    justify-content:space-between;
+    padding:0px 80px;
+    width: auto;
+    height: 80px;
+}
+.overflw{
+  overflow: hidden;
+}
+#bbs{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom:21px;
+  padding-top: 20px;
+  font-size: 40px;
+ text-decoration: none;
+ color: black;
+ background-color: white;
+}
+.header2{
+ background-color: rgb(240, 238, 238);
+  color:black;
+  width: auto;
+  height: 35px;
+  padding-bottom:5px ;
+}
+.header2 ul{
+   background-color: rgb(240, 238, 238);
+  display:flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding:0px 190px;
+}
+.header2 ul li{
+   background-color: rgb(240, 238, 238);
+  margin-top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  color:black;
+  list-style-type: none;
+  text-decoration: none;
+}
+#foto{
+  background-color: white;
+    border-radius: 50%;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+  #login{
+    font-size:xx-large;
+    margin-top: 25px;
+    color: black;
+    background-color: white;
+  }
+
