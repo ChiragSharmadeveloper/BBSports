@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.18.2",
-    "react-fast-marquee": "^1.6.5"
-  }
-}
