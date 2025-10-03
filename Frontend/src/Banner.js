@@ -1,4 +1,4 @@
-import react from 'react'
+// import react from 'react'
 import Card from './Card'
 import VideoPlayer from './Video';
 import { Link } from 'react-router-dom';
@@ -20,14 +20,14 @@ const Banner = ({title }) => {
         Customer satisfaction is at the heart of everything we do. We aim to offer an exceptional shopping experience, whether you're purchasing for yourself, your team, or a cricket academy. With fast shipping, competitive prices, and excellent customer support, BB Sports is committed to providing cricket lovers with the best products and service.
           Join the BB Sports family today, and take your cricket game to the next level with the finest equipment available. Your cricket journey starts here!</h4>       
       </div>
-        <img src={transperentlogo} id="foto2"/>
+        <img src={transperentlogo} id="foto2" alt=''/>
       </div>
 
 
       {/* { Card section } */}
       
       <div className='cardholder'>
-     <Link to='/Products'><Card image={"/image/bag 2.jpg"} title1={"BAGS"} id="card1"></Card></Link>
+     <Link to='/Products'><Card image={"/image/bag 2.jpg"} title1={"BAGS"} id="card1"/></Link>
     <Card image={"/image/tennis b.jpg"} title1={"TENNIS BATS"} id="card1"/>
     <Card image={"/image/PP2.jpg"} title1={"BATTING PADS"} id="card1"/>
     <Card image={"/image/limited gloves.jpg"} title1={"GLOVES"} id="card1"/>

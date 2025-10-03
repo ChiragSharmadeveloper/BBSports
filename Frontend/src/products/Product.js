@@ -7,11 +7,19 @@ import { Navigation, Pagination, A11y } from 'swiper/modules';
 import './Product.css'
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
+import ProductCard from '../ProductCard';
+// import ProductList from '../ProductList';
+// import TennisBats from '../productList/AllBats/TennisBats';
 
 const ProductPage = () => {
   
-  return (
-    <div className='main'>
+  return ( 
+    
+    <>  
+    <div>
+      <ProductCard productImg={"/image/gloves1.jpg"} title={"Samsung Galaxy S24 Ultra"} price={90000} description={"Samsung is introducing a new galaxy S24 Ultra with a premium texture that has no match and available in 4 variant colors."} productImg1={"/image/gloves2.jpg"} productImg2={"/image/gloves4.jpg"} productImg3={"/image/gloves5.jpg"}/>
+    </div>
+      <div className='main'>
       <h1 class='productHead'>All Our Products</h1>
  <button class='lbtn1' ><SlArrowLeft /> Previous</button>
       <button class='rbtn1'><SlArrowRight /> Next</button>
@@ -43,6 +51,7 @@ const ProductPage = () => {
         <button class='cardbutton'>More Details</button>
           </div>
         </div>
+
          <div class='classswiper'>
         
         <img src="\image\C bat2.jpg" alt='' class='imgproduct' />
@@ -53,13 +62,13 @@ const ProductPage = () => {
         <button class='cardbutton'>More Details</button>
           </div>
         </div>
-        <div class='classswiper'>
         
+        <div class='classswiper'>
         <img src="\image\bat3.jpg" alt='' class='imgproduct' />
         <div class='card-right'>
         <h2> BB Sports Condor Surge Grade 1 English Willow Cricket Bat ( Size: Short Handle, Ball_ type : Leather  | Unisex Gloves , Playing Style : All-Round ) | Free Cover | Ready to Play  </h2>
-        <p class='Rate'> M.R.P <span class='price'>  ₹25500/-   </span>₹20500/-</p>
-        <button class='cardbutton'>Add To Cart</button> 
+        <p class='Rate'> M.R.P <span class='price'>  ₹25500/- </span>₹20500/-</p>
+        <button class='cardbutton'>Add To Cart</button>
         <button class='cardbutton'>More Details</button>
           </div>
 
@@ -94,10 +103,10 @@ const ProductPage = () => {
         <button class='cardbutton'>Add To Cart</button> 
         <button class='cardbutton'>More Details</button>
           </div>
-
         </div>
+
          <div class='classswiper'>
-        
+          <a href='./productList/AllBats/TennisBats.js'></a>
         <img src="\image\bat6.jpg" alt='' class='imgproduct' />
          <div class='card-right'>
         <h2> BB Sports Classic Cricket Bat for Mens, Adults and Kids ( Size -3,4,5) | Material: English Willow | Lightweight | Free Cover | Ready to Play | for  Player | Ideal for Leather  | Unisex Gloves  </h2>
@@ -105,10 +114,9 @@ const ProductPage = () => {
         <button class='cardbutton'>Add To Cart</button> 
         <button class='cardbutton'>More Details</button>
           </div>
-
         </div>
-         <div class='classswiper'>
         
+         <div class='classswiper'>
         <img src="\image\bat7.jpg" alt='' class='imgproduct' />
          <div class='card-right'>
         <h2> BB Sports Classic Cricket Bat for Mens, Adults and Kids ( Size -3,4,5) | Material: Engliah Willow | Lightweight | Free Cover | Ready to Play | for  Player | Ideal for Leather  | Unisex Gloves  </h2>
@@ -116,10 +124,9 @@ const ProductPage = () => {
         <button class='cardbutton'>Add To Cart</button> 
         <button class='cardbutton'>More Details</button>
           </div>
-
         </div>
+
          <div class='classswiper'>
-        
         <img src="\image\bat8.jpg" alt='' class='imgproduct' />
          <div class='card-right'>
         <h2> BB Sports Limited Edition Cricket Bat for Mens, Adults and Boys ( Size - 4,5) | Material: English Willow | Lightweight | Free Cover | Ready to Play | for  Player | Ideal for Leather  | Unisex Gloves  </h2>
@@ -130,7 +137,6 @@ const ProductPage = () => {
 
         </div>
          <div class='classswiper'>
-        
         <img src="\image\bat9.jpg" alt='' class='imgproduct' />
          <div class='card-right'>
         <h2> BB Sports 1 Grade Bat for Mens and Adults (Size - 5) | Material: Premium English Willow | Lightweight | Free Cover | Ready to Play | for Professional Players | Ideal for Leather  | Unisex Gloves  </h2>
@@ -138,14 +144,12 @@ const ProductPage = () => {
         <button class='cardbutton'>Add To Cart</button> 
         <button class='cardbutton'>More Details</button>
           </div>
-
         </div>
        
       </SwiperSlide>
       <SwiperSlide>
                                {/*   BAG SECTION  */}
         <div class='classswiper'>
-        
         <img src="\image\bag1.jpg" alt='' class='imgproduct' />
          <div class='card-right'>
         <h2> BB Sports Test Pro Edition Wheelie Cricket Kitbag – Premium, High-Performance Cricket Bag with Smooth Wheels, Mobile Charging Port , Multiple Compartments & Spacious Storage </h2>
@@ -153,10 +157,9 @@ const ProductPage = () => {
         <button class='cardbutton'>Add To Cart</button> 
         <button class='cardbutton'>More Details</button>
           </div>
-
         </div>
+
          <div class='classswiper'>
-        
         <img src="\image\k bag 1.jpg" alt='' class='imgproduct' />
          <div class='card-right'>
         <h2> BB Sports Cricket Kit Bag for Kids with Extra Quality Heavy Padded , Two type of colour options (Grey , Blue)</h2>
@@ -711,12 +714,13 @@ const ProductPage = () => {
       </div>
     </Swiper>
 
-     
-     
-
-
-
     </div>
+    <div>
+    {/* <ProductList/> */}
+    </div>
+    
+    </>
+
   );
 };
 

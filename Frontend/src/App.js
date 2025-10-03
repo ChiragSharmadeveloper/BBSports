@@ -10,9 +10,6 @@ import { Routes,Route } from 'react-router-dom';
 import ProductPage from './products/Product';
 import { BeatLoader } from 'react-spinners';
 
-
-
-
 function  App() {
 
   const[loading, setLoading] = useState(true);
@@ -20,7 +17,7 @@ function  App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 500);
   }, []);
 
   return (
