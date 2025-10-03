@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 import userDetails from '../model/userModel.js';
+import crypto from "crypto";
 
 
 let emailRegex= /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
@@ -35,6 +36,30 @@ export const signUp=async (req,res)=>{
 
 
 export const logIn=async(req,res)=>{
+    try{
+        const{phoneno}=req.body;
+    if(!phoneno) res.status(400).json({message:"Phone number is not found"});
 
-    
+     const normalizedPhone = phoneno.trim();
+
+    const user = await userDetails.findOne({ phone: normalizedPhone });
+    const exists = !!user;
+
+   const otp = generateSixDigitOtp();
+    const otpHash = hashOtp(otp);
+    const expiresAt = new Date(Date.now() + OTP_TTL_MINUTES * 60 * 1000);
+
+      await OtpModel.findOneAndUpdate(
+      { phone: normalizedPhone },
+      { phone: normalizedPhone, otpHash, expiresAt, createdAt: new Date() },
+      { upsert: true, new: true }
+      );
+
+    await sendOtpSms(normalizedPhone, otp);
+
+    return res.json({ message: 'OTP sent', exists });
+  } catch (err) {
+    console.error('request-otp error', err);
+    return res.status(500).json({ message: 'Internal server error' });
+  }
 }
