@@ -17,7 +17,7 @@ const ProductPage = () => {
     
     <>  
     <div>
-      <ProductCard productImg={"/image/gloves1.jpg"} title={"Samsung Galaxy S24 Ultra"} price={90000} description={"Samsung is introducing a new galaxy S24 Ultra with a premium texture that has no match and available in 4 variant colors."} productImg1={"/image/gloves2.jpg"} productImg2={"/image/gloves4.jpg"} productImg3={"/image/gloves5.jpg"}/>
+      <ProductCard productSideImg1={"/image/gloves6.jpg"} productSideImg2={"/image/gloves7.jpg"} productSideImg3={"/image/gloves 10.jpg"} productSideImg4={"/image/gloves9.jpg"} productMain={"/image/gloves1.jpg"} title={"Samsung Galaxy S24 Ultra"} price={90000} description={"Samsung is introducing a new galaxy S24 Ultra with a premium texture that has no match and available in 4 variant colors."} productImg1={"/image/gloves2.jpg"} productImg2={"/image/gloves4.jpg"} productImg3={"/image/gloves5.jpg"}/>
     </div>
       <div className='main'>
       <h1 class='productHead'>All Our Products</h1>

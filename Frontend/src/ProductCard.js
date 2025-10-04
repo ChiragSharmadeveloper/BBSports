@@ -1,11 +1,24 @@
 import React from 'react'
 import './ProductCard.css'
 
-const ProductCard = ({productImg,productImg1,productImg2,productImg3,title,price,description}) => {
+const ProductCard = ({productMain,productSideImg1,productSideImg2,productSideImg3,productSideImg4,productImg1,productImg2,productImg3,title,price,description}) => {
+
   return (
     <>
+    <div className='productCard'>
+    <div className='productImgLeft'>
+        <img src={productSideImg1} alt=''/>
+        <img src={productSideImg2} alt=''/>
+        </div>
+
       <div className='productImg'>
-        <img src={productImg} alt=''/>
+        <img src={productMain} alt=''/>
+        </div>
+
+        <div className='productImgRight'>        
+        <img src={productSideImg3} alt=''/>
+        <img src={productSideImg4} alt=''/>
+        </div>
         </div>
 
         <div className='productDetails'>
