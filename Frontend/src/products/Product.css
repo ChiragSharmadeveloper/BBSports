@@ -45,6 +45,10 @@
     text-decoration: none;
     color:black
  }
+ .card-right h2{
+   text-decoration: none;
+   color:black;
+ }
  .imgproduct{
    width: 30%;
  }

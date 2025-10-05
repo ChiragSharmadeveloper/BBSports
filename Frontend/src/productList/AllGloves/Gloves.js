@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ProductList = () => {
+const Gloves = () => {
   return (
     <>
-
+      
     </>
   )
 }
 
-export default ProductList
+export default Gloves

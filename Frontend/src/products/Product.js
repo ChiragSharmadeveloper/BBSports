@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -7,18 +8,11 @@ import { Navigation, Pagination, A11y } from 'swiper/modules';
 import './Product.css'
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
-import ProductCard from '../ProductCard';
-// import ProductList from '../ProductList';
-// import TennisBats from '../productList/AllBats/TennisBats';
-
 const ProductPage = () => {
   
   return ( 
     
     <>  
-    <div>
-      <ProductCard productSideImg1={"/image/gloves6.jpg"} productSideImg2={"/image/gloves7.jpg"} productSideImg3={"/image/gloves 10.jpg"} productSideImg4={"/image/gloves9.jpg"} productMain={"/image/gloves1.jpg"} title={"Samsung Galaxy S24 Ultra"} price={90000} description={"Samsung is introducing a new galaxy S24 Ultra with a premium texture that has no match and available in 4 variant colors."} productImg1={"/image/gloves2.jpg"} productImg2={"/image/gloves4.jpg"} productImg3={"/image/gloves5.jpg"}/>
-    </div>
       <div className='main'>
       <h1 class='productHead'>All Our Products</h1>
  <button class='lbtn1' ><SlArrowLeft /> Previous</button>
@@ -45,7 +39,9 @@ const ProductPage = () => {
         
         <img src="\image\bat.jpg.jpg" alt='' class='imgproduct' />
         <div class='card-right'>
+        <Link to='/tennisbats'>
         <h2> BB Sports Limited Edition ( Cut Finger ) Cricket Gloves for Professional Players with comfortable English Pitat Leather | Lightweight | Free Cover | Ready to Play | Soft Leather | Ideal for Leather  | Unisex Gloves  </h2>
+        </Link>
         <p class='Rate'>M.R.P <span class='price'>  ₹5500/-   </span>₹3500/-</p>
         <button class='cardbutton'>Add To Cart</button> 
         <button class='cardbutton'>More Details</button>
@@ -56,7 +52,9 @@ const ProductPage = () => {
         
         <img src="\image\C bat2.jpg" alt='' class='imgproduct' />
         <div class='card-right'>
+          <Link to='/tennisballs'>
         <h2> BB Sports Catching Poplar Willow Practice Bat with Foam Base for Catching and Fielding Practice </h2>
+        </Link>
         <p class='Rate'> M.R.P <span class='price'>  ₹2890/-   </span>₹1500/-</p>
         <button class='cardbutton'>Add To Cart</button> 
         <button class='cardbutton'>More Details</button>

@@ -25,14 +25,31 @@ const ProductCard = ({productMain,productSideImg1,productSideImg2,productSideImg
         <h1>{title}</h1>
         <h2>{price}</h2>
         <p>{description}</p>
-        <select>
-        <option className='options'>Size</option>
-        <option className='options'>Small</option>
-        <option className='options'>Medium</option>
-        <option className='options'>Large</option>
-        <option className='options'>X-Large</option>
-        <option className='options'>XX-Large</option>
-        <option className='options'>Free Size</option>
+        <select className='sizeSelect'>
+        <option>Size</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>X-Large</option>
+        <option>XX-Large</option>
+        <option>Free Size</option>
+        </select>
+        <select className='quantitySelect'>
+          <option>Quantity</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
         </select>
       </div>
 

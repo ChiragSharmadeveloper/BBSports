@@ -9,6 +9,8 @@ import Contact from './contact/Contact';
 import { Routes,Route } from 'react-router-dom';
 import ProductPage from './products/Product';
 import { BeatLoader } from 'react-spinners';
+import TennisBats from './productList/AllBats/TennisBats';
+import TennisBalls from './productList/AllBalls/TennisBalls';
 
 function  App() {
 
@@ -41,6 +43,8 @@ function  App() {
   <Route path="/about" element={<About/>} />
   <Route path="/contact" element={<Contact/>} />
   <Route path="/Products" element={<ProductPage/>} />
+  <Route path="/tennisbats" element={<TennisBats/>}/>
+  <Route path="/tennisballs" element={<TennisBalls/>}/>
       {/* <Route path="/" element={<VideoPlayer/>} /> */}
 </Routes>
 <Footer/>
